@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic marquee tag</title>
+    <style>
+        #textmarq{
+            padding: 15px;
+            background-color: antiquewhite;
+            border-radius: 2px solid #fff;
+            color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>
+            Dynamic marquee tag in html using simple JS
+        </h1>
+    </center>
+
+    <marquee behaviour="scroll" direction="right" scrollamount="20"
+    id="textmarq">
+    <img src="boy.png" alt="imag">
+    <img src="boy.png" alt="imag">
+    <img src="boy.png" alt="imag">
+    <img src="boy.png" alt="imag">
+    <img src="boy.png" alt="imag">
+    <img src="boy.png" alt="imag">
+    <img src="boy.png" alt="imag">
+    <img src="boy.png" alt="imag">
+    <img src="boy.png" alt="imag">
+    <img src="boy.png" alt="imag">
+    </marquee>
+
+    <script>
+        const x = document.getElementById('textmarq');
+         x.onmouseover = function(){
+            x.stop();
+         }
+            // textmarq.style.backgroundColor ="rgb(255, 57, 57)";
+
+
+    
+
+        x.onmouseleave = function(){
+            x.start();
+        }
+    </script>
+    
+</body>
+</html>
