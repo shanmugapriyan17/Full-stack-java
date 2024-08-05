@@ -1,0 +1,139 @@
+.main{
+    display: flex;
+}
+.main1{
+    margin: 15px;
+    padding: 25px;
+    background-color: rgb(251, 251, 154);
+    width: 100%;
+    border: 2px solid rgb(245, 245, 27);
+    border-radius: 50px;
+}
+.img1{
+    width: 7%;
+    position: relative;
+    left: 20px;
+}
+h1{
+    text-align: center;
+    position: relative;
+    bottom: 35px;
+    left: 50px;
+    display: inline;
+    color: brown;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1000px;
+       
+}
+.img2{
+    display: inline;
+    width: 25px;
+    position: relative;
+    left: 65%;
+    bottom: 70px;
+}
+.span1{
+    display: inline;
+    position: relative;
+    left: 65%;
+    bottom: 70%;
+    font-size: 38px;
+}
+.img5,.img6{
+    width: 27%;
+    margin: 10px;
+}
+.img5:hover{
+    border: 2px solid black;
+    border-radius: 2px;
+    margin: 20px;
+    padding: 2px;
+    background-color: white;
+    scale: 0.1s;
+    transition: ease-in-out 0.2s;
+}   
+.img6:hover{
+    border: 2px solid black;
+    border-radius: 2px;
+    margin: 20px;
+    padding: 2px;
+    background-color: white;
+    scale: 0.1s;
+    transform: scale(1.1)
+
+}
+.img3{
+    display: inline;
+    width: 25px;
+    position: relative;
+    left: 65%;
+    bottom: 30px;
+}
+.span2{
+    display: inline;
+    position: relative;
+    left: 65%;
+    bottom: 32%;
+    font-size: 38px;
+}
+.sha{
+    position: relative;
+    left: 77.1%;
+}
+.img4{
+    display: inline;
+    width: 25px;
+    position: relative;
+    left: 65%;
+    top: 13px;
+}
+.span3{
+    display: inline;
+    position: relative;
+    left: 65%;
+    top: 7%;
+    font-size: 38px;
+}
+.main2{
+    display: flex;
+    padding: 20px;
+    background-color: rgb(255, 255, 157);
+    margin: 20px;
+    width: 50%;
+    border: 2px solid  rgb(251, 251, 154);
+    border-radius: 15px;
+}
+.div{
+    display: flex;
+    justify-content: center; 
+}
+.button{
+    color: brown;
+    background-color:   rgb(251, 251, 154);
+    border: 2px solid  rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 7px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.para1{
+    position: relative;
+    left: 1370%;
+    bottom: 10px;
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.para2{
+    position: relative;
+    left: 1050%;
+    top: 10px;
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main3{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
