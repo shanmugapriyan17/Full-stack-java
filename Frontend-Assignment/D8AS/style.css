@@ -1,0 +1,108 @@
+.body1{
+    background-image: url(./img/1512453.jpg);
+    image-resolution: blur;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dvi1{
+    display: flex;
+    
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 180px;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+.h31{
+
+}
+form{
+    width: 23%;
+    border: 0.01vh solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.hr1{
+    position: relative;
+    top: 20px;
+
+}
+.label1{
+    width: 100%;
+}
+.input1{
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 01px solid rgba(0, 0, 0, 0.1);;
+    border-radius: 6px;
+    padding: 8px;
+}
+.a1{
+    position: relative;
+    bottom: 5px;
+
+
+}
+.p1{
+    position: relative;
+    bottom: 20px;
+    font-size: small;
+    left: 5px;
+}
+.input2{
+    position: relative;
+    top: 20px;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px;
+    border: 01px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    background-color: rgb(250, 250, 143);
+    cursor: pointer;
+}
+.span1{
+    position: relative;
+    top: 15px;
+
+}
+.span2{
+    position: relative;
+    top: 15px;
+}
+.img1{
+    width: 40px;
+
+}
+.but01{
+    position: relative;
+    left: 42%;
+    cursor: pointer;
+    background-color: #565650;
+}
+.h61{
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.h51{
+    display: inline;
+    position: relative;
+    left: 10px;
+}
+.in1{
+    position: relative;
+    left: 5px;
+}
+.div5{
+    display: flex;
+    flex-direction: row;
+}
