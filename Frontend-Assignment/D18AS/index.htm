@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple product</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/apple.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family: Poppins, sans-serif">
+    <header>
+      <div>
+        <h1>Apple product</h1>
+      </div>
+      <div>
+        <ul type="none">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="section-1">
+      <div class="section-1-left">
+        <strong>Hello,<br />You.</strong>
+        <p>
+          👋 Double-click to introduce yourself. Tell the world<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;what
+          you do <i class="fa-solid fa-minus"></i> and why they should care
+        </p>
+      </div>
+      <div class="section-1-right">
+        <img
+          src="./img/181333-OWU02K-887-removebg-preview (1).png"
+          alt="image"
+        />
+      </div>
+    </section>
+
+    <section class="section-2">
+      <div class="section-2-left">
+        <strong>Apple MacBook</strong>
+        <p>
+          The best Apple laptop we've tested is the Apple MacBook Pro 14 (M3,
+          2023).<br />
+          This late 2023 model comes only nine months after its M2
+          predecessor,<br />
+          sporting Apple's new M3 SoCs.
+        </p>
+        <center>
+          <button onclick="showDialog()">
+            <i class="fa-brands fa-apple"></i>
+          </button>
+
+          <div id="MacBook">
+            <dialog id="popup" style="margin: auto">
+              <form method="dialog">
+                <label for="username">Apple ID</label>
+                <input
+                  type="text"
+                  id="username"
+                  placeholder="Enter Apple ID here.."
+                />
+
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter email here.."
+                />
+
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter password here.."
+                />
+
+                <button type="submit">Close</button>
+              </form>
+            </dialog>
+          </div>
+        </center>
+      </div>
+      <div class="section-2-right">
+        <img src="./img/pexels-quibler7-25839642-Photoroom.png" alt="image" />
+      </div>
+    </section>
+    <section class="section-3">
+      <div class="section-3-left">
+        <strong>Apple Watch</strong>
+        <p>
+          The Apple Watch Series 9 is the best smartwatch yet thanks to<br />
+          significant performance upgrades and the addition of a handy<br />
+          new double-tap gesture.
+        </p>
+        <center>
+        <div id="Watch">
+          <h1>Rating</h1>
+          <progress min="0" max="100" value="0" id="download"></progress>
+          <div id="result">Rating 0%</div>
+
+          <dialog id="popup">
+            <h1>Success!</h1>
+          </dialog>
+        </div>
+        </center>
+      </div>
+      <div class="section-3-right">
+        <img
+          src="./img/pexels-doouglasma-14691505-Photoroom (1).png"
+          alt="image"
+        />
+      </div>
+    </section>
+    <section class="section-4">
+      <div class="section-4-left">
+        <strong>Apple AirPods</strong>
+        <p>
+          Apple not only swapped in USB-C for Lightning connectivity<br />
+          in its new iPhone 15 models, but it made the switch with the<br />
+          AirPods Pro (2nd generation).
+        </p>
+        <center>
+          <div id="Air">
+            <h1>Performance</h1>
+            <meter min="0" max="100" value="0" low="20" high="80" id="voltage"></meter>
+            <p id="results"></p>
+        </div>
+        </center>
+      </div>
+      <div class="section-4-right">
+        <img
+          src="./img/pexels-screenpost-10421387-Photoroom (1).png"
+          alt="image"
+        />
+      </div>
+    </section>
+
+    <script>
+      function showDialog() {
+        var popup = document.getElementById("popup");
+        popup.showModal();
+      }
+
+      let progressbar = document.getElementById("download");
+      let result = document.getElementById("result");
+      // let popup = document.getElementById('popup');
+
+      let progressvalue = 0;
+
+      function downloadHandler() {
+        if (progressvalue < 100) {
+          progressvalue++;
+          progressbar.value = progressvalue;
+          result.innerHTML = "Rathing calculating " + progressvalue + "%";
+          result.style.color = "red";
+        } else {
+          result.style.color = "green";
+          result.innerHTML = "Rathing 4.5!";
+          popup.showModal();
+          clearInterval(downloadInterval); // Stop the interval when done
+        }
+      }
+
+      let downloadInterval = setInterval(downloadHandler, 50);
+    </script>
+   <script>
+    let voltageMeter = document.getElementById('voltage');
+    let results = document.getElementById('results');
+    let meterValue = 50; // Start from the center
+
+    function voltageHandler() {
+        if (meterValue < 100) {
+            meterValue++;
+            voltageMeter.value = meterValue;
+
+            if (meterValue < 10) {
+                results.innerHTML = "Low Performance!";
+                results.style.color = "yellow";
+            } else if (meterValue >= 20 && meterValue <= 75) {
+                results.innerHTML = "Medium Performance!";
+                results.style.color = "green";
+            } else if (meterValue > 75) {
+                results.innerHTML = "High Performance!";
+                results.style.color = "red";
+            }
+        }
+    }
+
+    setInterval(voltageHandler, 100);
+</script>
+  </body>
+</html>

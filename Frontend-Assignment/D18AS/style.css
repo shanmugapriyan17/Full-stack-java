@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+
+}
+body{
+  background-color: white;
+}
+header{
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+header ul{
+  display: flex;
+
+}
+header ul{
+  display: flex;
+  gap: 20px;
+}
+header ul li a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: gray;
+}
+header ul li a:hover{
+  padding-bottom: 5px;
+  border-bottom: 0.2rem solid gray;
+}
+.section-1{
+  display: flex;
+}
+.section-1-left{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 10rem;
+  padding-top: 16rem;
+}
+.section-1-left strong{
+  font-size: 15.5rem;
+  line-height: 14.5rem;
+  font-family: "Poppins", sans-serif;
+  
+}
+.section-1-left p{
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  padding-top: 1.8rem;
+
+
+}
+.section-1-right{
+  display: flex;
+  flex: 1;
+}
+.section-1-right img{
+  width: 50vw;
+}
+.section-2, .section-3, .section-4{
+  display: flex;
+  margin-top: 200px;
+}
+.section-2, .section-3, .section-4 img{
+  width: 50vw;
+}
+.section-2-left,
+.section-3-left,
+.section-4-left{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 10rem;
+  padding-top: 5rem;
+
+}
+.section-2-right,
+.section-3-right,
+.section-4-right{
+  display: flex;
+  flex: 1;
+}
+.section-2-left strong,
+.section-3-left strong,
+.section-4-left strong {
+  font-size: 12.5rem;
+  line-height: 16.3rem;
+}
+.section-2-left p,
+.section-3-left p,
+.section-4-left p{
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  padding-top: 1.8rem;
+
+}
+.section-3-right img{
+  position: relative;
+  left: 400px;
+}
+#popup {
+  border: none;
+  border-radius: 8px;
+  padding-left: 30px; /* Added left padding */
+  padding-top: 20px;
+  padding-right: 45px;
+  padding-bottom: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+#popup label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+#popup input[type="text"],
+#popup input[type="email"],
+#popup input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+#popup button {
+  padding: 10px 15px;
+  background-color: gray;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#popup button:hover {
+  background-color: gray;
+}
+#MacBook{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.section-2-left button{
+  padding: 10px 30px;
+  width: fit-content;
+  margin-top: 3rem;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+#Watch h1{
+  margin-top: 20px;
+  
+}
+#Air h1{
+  margin-top: 50px;
+}
+#Air meter, #Watch progress{
+  width: 30vw;
+}
+
+#Air {
+  display: inline;
+  text-align: center;
+ 
+  /* Center text inside the div */
+}
+
+meter {
+  width: 80%;
+  height: 30px;
+  margin: 20px auto;
+}
+
+#results {
+  margin-top: 1px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
