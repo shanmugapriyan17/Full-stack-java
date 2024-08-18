@@ -1,0 +1,93 @@
+.div1{
+    display: flex;
+    flex-direction: column;
+
+}
+.div2{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 2px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.h31, .h61{
+    position: relative;
+    top: 40px;
+    margin-left: 25px;
+    color: rgb(243, 84, 84);
+    text-decoration: none;
+
+}
+.img1{
+    width: 6%;
+    height: 20%;
+}
+.img2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 24px;
+}
+.img3{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 62px;
+    
+}
+.img4{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 95px;
+}
+marquee{
+    padding: 10px;
+    margin-right: 5px;
+}
+.video1{
+    width: 20%;
+    height: 20%;
+}
+.div5{
+    display: flex;
+    justify-content: center;
+   
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+.video2{
+    margin-top: 50px;
+    /* margin-left: 35px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.div4{
+    /* width: fit-content;
+    width: 106px; */
+    /* width: 106px; */
+    width: 25%;
+}
+.video2:hover{
+    border: 2px solid red;
+}
+footer{
+    background-color: rgb(44, 44, 44);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+
+}
+.h11{
+    margin: auto;
+    padding: 100px;
+}
