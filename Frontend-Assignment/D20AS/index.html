@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <center>
+    <h1>Canvas tag</h1>
+
+    <canvas
+      id="sty"
+      style="border: 2px solid black; width: 500px; height: 500px"
+    ></canvas><br>
+
+    <script>
+      const canvas1 = document.getElementById("sty").getContext("2d");
+
+      canvas1.beginPath();
+      canvas1.moveTo(50, 130);
+      canvas1.lineTo(50, 20);
+      canvas1.moveTo(250, 130);
+      canvas1.lineTo(250, 20);
+      canvas1.moveTo(250, 20);
+      canvas1.lineTo(50, 20);
+      canvas1.moveTo(250, 130);
+      canvas1.lineTo(50, 130);
+      canvas1.stroke();
+      canvas1.closePath();
+
+      canvas1.beginPath();
+      canvas1.moveTo(50, 20);
+      canvas1.quadraticCurveTo(200, 70, 50, 130);
+      canvas1.stroke();
+      canvas1.closePath();
+
+      canvas1.beginPath();
+      canvas1.moveTo(250, 20);
+      canvas1.quadraticCurveTo(150, 100, 50, 20);
+      canvas1.stroke();
+      canvas1.closePath();
+
+      canvas1.beginPath();
+      canvas1.moveTo(250, 130);
+      canvas1.quadraticCurveTo(90, 80, 250, 20);
+      canvas1.stroke();
+      canvas1.closePath();
+
+      canvas1.beginPath();
+      canvas1.moveTo(50, 130);
+      canvas1.quadraticCurveTo(150, 50, 250, 130);
+      canvas1.stroke();
+      canvas1.closePath();
+    </script>
+
+<canvas
+id="star"
+style="border: 2px solid black; width: 500px; height: 500px"
+></canvas><br>
+
+<script>
+const canvas2 = document.getElementById("star").getContext("2d");
+
+canvas2.beginPath();
+canvas2.moveTo(50, 130);
+canvas2.lineTo(50, 20);
+canvas2.moveTo(250, 130);
+canvas2.lineTo(250, 20);
+canvas2.moveTo(250, 20);
+canvas2.lineTo(50, 20);
+canvas2.moveTo(250, 130);
+canvas2.lineTo(50, 130);
+canvas2.stroke();
+canvas2.closePath();
+
+canvas2.beginPath();
+canvas2.moveTo(100, 20);
+canvas2.quadraticCurveTo(200, 70, 180, 130);
+canvas2.stroke();
+canvas2.closePath();
+
+canvas2.beginPath();
+canvas2.moveTo(200, 20);
+canvas2.quadraticCurveTo(100, 70, 100, 130);
+canvas2.stroke();
+canvas2.closePath();
+
+canvas2.beginPath();
+canvas2.moveTo(50, 80);
+canvas2.quadraticCurveTo(150, 20, 250, 80);
+canvas2.stroke();
+canvas2.closePath();
+
+// canvas2.beginPath();
+// canvas2.moveTo(50, 130);
+// canvas2.quadraticCurveTo(150, 50, 250, 130);
+// canvas2.stroke();
+// canvas2.closePath();
+</script>
+
+<canvas
+id="star1"
+style="border: 2px solid black; width: 500px; height: 500px"
+></canvas><br>
+
+<script>
+const canvas3 = document.getElementById("star1").getContext("2d");
+
+canvas3.beginPath();
+canvas3.moveTo(50, 130);
+canvas3.lineTo(50, 20);
+canvas3.moveTo(250, 130);
+canvas3.lineTo(250, 20);
+canvas3.moveTo(250, 20);
+canvas3.lineTo(50, 20);
+canvas3.moveTo(250, 130);
+canvas3.lineTo(50, 130);
+canvas3.stroke();
+canvas3.closePath();
+
+canvas3.beginPath();
+canvas3.moveTo(150, 20);
+canvas3.quadraticCurveTo(170, 80, 50, 80);
+canvas3.stroke();
+canvas3.closePath();
+
+canvas3.beginPath();
+canvas3.moveTo(150, 20);
+canvas3.quadraticCurveTo(100, 70, 250, 80);
+canvas3.stroke();
+canvas3.closePath();
+
+canvas3.beginPath();
+canvas3.moveTo(50, 80);
+canvas3.quadraticCurveTo(170, 50, 150, 130);
+canvas3.stroke();
+canvas3.closePath();
+
+canvas3.beginPath();
+canvas3.moveTo(150, 130);
+canvas3.quadraticCurveTo(115, 45, 250, 80);
+canvas3.stroke();
+canvas3.closePath();
+</script>
+
+<canvas
+id="star3"
+style="border: 2px solid black; width: 500px; height: 500px"
+></canvas><br>
+
+<script>
+const canvas4 = document.getElementById("star3").getContext("2d");
+
+canvas4.beginPath();
+canvas4.moveTo(50, 130);
+canvas4.lineTo(50, 20);
+canvas4.moveTo(250, 130);
+canvas4.lineTo(250, 20);
+canvas4.moveTo(250, 20);
+canvas4.lineTo(50, 20);
+canvas4.moveTo(250, 130);
+canvas4.lineTo(50, 130);
+canvas4.stroke();
+canvas4.closePath();
+
+canvas4.beginPath();
+canvas4.moveTo(150, 20);
+canvas4.quadraticCurveTo(40, 30, 50, 80);
+canvas4.stroke();
+canvas4.closePath();
+
+canvas4.beginPath();
+canvas4.moveTo(150, 20);
+canvas4.quadraticCurveTo(250, 30, 250, 80);
+canvas4.stroke();
+canvas4.closePath();
+
+canvas4.beginPath();
+canvas4.moveTo(50, 80);
+canvas4.quadraticCurveTo(60, 130, 150, 130);
+canvas4.stroke();
+canvas4.closePath();
+
+canvas4.beginPath();
+canvas4.moveTo(150, 130);
+canvas4.quadraticCurveTo(260, 130, 250, 80);
+canvas4.stroke();
+canvas4.closePath();
+
+canvas4.beginPath();
+canvas4.moveTo(150, 20);
+canvas4.quadraticCurveTo(170, 80, 50, 80);
+canvas4.stroke();
+canvas4.closePath();
+
+canvas4.beginPath();
+canvas4.moveTo(150, 20);
+canvas4.quadraticCurveTo(100, 70, 250, 80);
+canvas4.stroke();
+canvas4.closePath();
+
+canvas4.beginPath();
+canvas4.moveTo(50, 80);
+canvas4.quadraticCurveTo(170, 50, 150, 130);
+canvas4.stroke();
+canvas4.closePath();
+
+canvas4.beginPath();
+canvas4.moveTo(150, 130);
+canvas4.quadraticCurveTo(115, 45, 250, 80);
+canvas4.stroke();
+canvas4.closePath();
+</script>
+</center>
+
+</body>
+</html>
