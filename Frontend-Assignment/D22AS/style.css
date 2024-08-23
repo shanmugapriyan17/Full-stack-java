@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+}
+/* <ol>
+<li>Using Element name</li>
+<li>Using element id</li>
+<li>Using class</li>
+<li>Using attributes</li>
+<li>Using Attributes and Its values</li>
+</ol> */
+
+
+/* <h1>Element name</h1> */
+header{
+  margin: 10px auto;
+  
+
+}
+/* <h1>class name</h1> */
+.first-1{
+  
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  
+ 
+}
+header i{
+  padding: 5px 6px;
+  border-radius: 100%;
+}
+
+/* <h1> element id</h1> */
+
+#section-1-left{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0px 50px;
+  justify-content: center;
+  
+}
+#section-1-right{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  
+}
+#section-1-right img{
+  width: 200px;
+  height: 200px;
+}
+#section-1-left h1:nth-child(1){
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: normal;
+
+
+}
+
+#section-1-left h1:nth-child(2){
+  font-size: 1.5rem;
+  text-transform: capitalize;
+
+  
+}
+#section-1-left p{
+  font-size: 0.6rem;
+}
+.section-1-left-p2{
+ font-weight: 500;
+
+}
+.section-1-left-p2 span{
+  color: #F1C50E;
+}
+#section-1-left button{
+  margin-top: 5px;
+  width: fit-content;
+  padding: 10px 30px;
+  font-size: 0.5rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  background-color: #F1C50E;
+}
+#section-1-left p,#section-1-left h1{
+  margin: 5px 0px;
+}
+#section-1-right img{
+  position: relative;
+  top: 80px;
+  
+}
+#section-1-right{
+  background-image: url(./img/Untitled_design__1_-removebg-preview\ \(1\).png);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  width: 100%; 
+  height: 500px;
+  
+}
+.section-2{
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+}
+#section-2-left{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0px 50px;
+  justify-content: center;
+  gap: 6px;
+}
+
+#section-2-right{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0px 5px;
+  justify-content: center;
+
+}
+iframe{
+  width: 40vw;
+  height: 55vh;
+}
+#section-2-left h1,#section-2-right h1{
+  font-size: 1.4rem;
+
+}
+
+
+
+#section-2-left p{
+  padding: 8px 30px;
+  width: 30vw;
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+}
+#section-2-left p i{
+  font-size: 1.1rem;
+  padding-right: 6px;
+  
+}
+
+footer{
+  height: 50vh;
+  background-color: #F2F2F2;
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+}
+
+/* Attributes and its value*/
+
+footer section[class="footer-left"]{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0px 50px;
+  flex: 1;
+  justify-content: center;
+  
+
+
+
+}
+footer section[class="footer-right"]{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  
+
+
+
+}
+.footer-left h1{
+  font-size: 1rem;
+
+
+}
+.footer-left p{
+  font-size: 0.5rem;
+}
+
+/* attributes */
+
+.footer-left input[type]{
+    width: 30vw;
+    height: 5vh;
+    outline: none;
+
+}
+.footer-left button{
+  width: 30.5vw;
+  height: 5vh;
+  font-size: 0.5rem;
+  color: black;
+  background-color: #F1C50E;
+  border: none;
+  border-radius: 5px;
+}
+.footer-left input[type]::placeholder{
+  font-size: 0.5rem;
+  align-items: center;
+  padding-left: 2px;
+  
+}
+.footer-right p[class="footer-p-1"]{
+  font-size: 0.5rem;
+  text-align: center;
+}
+.footer-right i{
+  margin-left: 5px;
+  font-size: 0.8rem;
+  color: #F1C50E;
+  cursor: pointer;
+}
+.footer-right i:hover{
+  color: gainsboro;
+  transition: 0.5s;
+}
+.footer-left button:hover{
+  color: #D9B10D;
+  color: white;
+  transition: 0.5s;
+}
+#section-2-left p:hover{
+  background-color: #ffe16bc1;
+  transition: 0.5s;
+  border: 1px solid #ffe16bc1;
+  cursor: pointer;
+}
+#section-left-btn:hover{
+  background-color:#D9B10D;
+  transition: 0.5s;
+  cursor: pointer;
+}
+header i:hover{
+  background-color: #ffe16bc1;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* <h1>attributes</h1> */
+
