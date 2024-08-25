@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>progress bar</title>
+</head>
+<body>
+  <center>
+    <h1>progress tag in html</h1>
+    <progress></progress>
+
+    <h1>Static progress</h1>
+    <progress min="0" max="100" value="30"></progress>
+
+    <h1>Dynamic progress</h1>
+    <progress min="1" max="100" value="0" id="download"></progress>
+
+    <dialog id="popup">
+      <h1>Success!</h1>
+    </dialog>
+
+    <script>
+      let progressbar = document.getElementById('download');
+      var result = document.getElementById('result');
+      var popup = document.getElementById('popup');
+
+      var progressvalue = 0;
+
+      function downloadHandler(){
+        if(progressvalue<100){
+          progressvalue++;
+          console.log(progressvalue);
+          progressbar.value = progressvalue;
+          result.innerHTML = "downloading" + progressvalue + "%"
+          result.style.color = "red"
+
+        }else{
+          result.style.color = "green"
+          popup.show()
+        }
+      }
+          
+      setInterval('downloadHandler()', 50)
+    </script>
+
+
+  </center>
+  
+</body>
+</html>
