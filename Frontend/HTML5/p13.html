@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Meter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center; /* Center text and content */
+        }
+
+        #Air {
+            display: inline-block;
+            text-align: center; /* Center text inside the div */
+        }
+
+        meter {
+            width: 80%;
+            height: 30px;
+            margin: 20px auto;
+        }
+
+        #results {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="Air">
+        <h1>Performance</h1>
+        <meter min="0" max="100" value="0" low="20" high="80" id="voltage"></meter>
+        <p id="results"></p>
+    </div>
+
+    <script>
+        let voltageMeter = document.getElementById('voltage');
+        let results = document.getElementById('results');
+        let meterValue = 0;
+
+        function voltageHandler() {
+            if (meterValue < 100) {
+                meterValue++;
+                voltageMeter.value = meterValue;
+
+                if (meterValue < 20) {
+                    results.innerHTML = "Low Performance!";
+                    results.style.color = "yellow";
+                } else if (meterValue >= 20 && meterValue <= 75) {
+                    results.innerHTML = "Medium Performance!";
+                    results.style.color = "green";
+                } else if (meterValue > 75) {
+                    results.innerHTML = "High Performance!";
+                    results.style.color = "red";
+                }
+            }
+        }
+
+        setInterval(voltageHandler, 100);
+    </script>
+
+</body>
+</html>
