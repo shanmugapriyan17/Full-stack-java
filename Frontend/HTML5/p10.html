@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dialog</title>
+</head>
+<body>
+  <center>
+    <button onclick="onclick()">register</button>
+    <h1>Dialog tag</h1>
+    <p>this tag is used to create the po[ups in the webpage or websites.</p>
+
+    <dialog id="popup">
+      <label for="">username</label>
+      <input type="text" placeholder="Enter username here.."
+      <label for="">email</label>
+      <input for="email" placeholder="Enter email here..">
+      <label for="">password</label>
+      <input for="password" placeholder="Enter password here..">
+    
+       <button onclick="offclick()">close</button>
+      </dialog>
+
+       <script>
+        var popup = document.getElementById("popup");
+    
+        function onclick(){
+          popup.show()
+        }
+        function offclick(){
+          popup.close()
+        }
+      </script>
+      
+
+
+    
+
+
+
+
+   
+
+
+
+
+
+
+  </center>
+  
+</body>
+</html>
