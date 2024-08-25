@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>meter tag</title>
+</head>
+<body>
+  <center>
+    <h1>meter tag in html</h1>
+
+  
+  <hr>
+  <h1>Default meter tag</h1>
+  <meter></meter>
+
+  <h1>Static meter tag</h1>
+  <meter min="0" max="100" value="90" low="20" high="80"></meter>
+
+  <h1>Dynamic meter tag</h1>
+  <meter min="0" max="100" value="00" low="20" high="80" id="voltag"></meter>
+  <p id="result"></p>
+
+  <script>
+    let voltagMeter = document.getElementById('voltage');
+    let result = document.getElementById('result')
+    var metervalue =0;
+    function voltagHandler(){
+      if(metervalue<100){
+        metervalue++;
+        voltagMeter.value = metervalue;
+        if(metervalue<20){
+          result.innerHTML = "Low Voltage"
+          result.style.color = "yellow"
+
+        }else if(metervalue>20 && metervalue<75){
+          result.innerHTML = "medium voltage"
+          result.style.color = "green"
+
+        } else if(metervalue>75){
+          result.innerHTML = "high voltage"
+          result.style.color = "red"
+        }else {
+          result.innerHTML = ""
+        }
+      }
+
+    }
+     setInterval('voltageHandler()', 100)
+
+
+
+
+
+
+
+
+  
+  </script>
+</center>
+</body>
+</html>
