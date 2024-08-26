@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas</title>
+</head>
+<body>
+
+  <canvas id="first" style="border: 2px solid black; width: 500px; height: 500px;"></canvas><br>
+
+  <script>
+    const convas1 = document.getElementById('first').getContext('2d');
+
+    convas1.fillStyle = 'pink';
+    convas1.fillRect(50, 50, 200, 50);//(x-axis, y-axis, width, height)
+    convas1.fll()
+  </script>
+
+  <canvas id="fill" style="border: 2px solid black; width: 500px; height: 500px;">
+
+
+
+  </canvas>
+
+  <script>
+    const canvas1 = document.getElementById('fill').getContext('2d');
+
+    //first rectangle
+    canvas1.beginPath();//starting the new graphics
+    canvas1.fillRect(50, 50, 100, 50);//(x-axis, y-axis, width, height)
+    canvas1.stroke();//applying the stroke to rectangle
+    canvas1.fillStyle ="red";//here mentioning the fill color
+    canvas1.fill();//here we are applying the fill to rectangle
+    canvas1.closePath();//closing
+
+    //second rectangle
+    canvas1.beginPath();//it is used to start the new graphics in same canvas
+    canvas1.lineWidth ='5';//it is use to make border or soke width
+    canvas1.strokeStyle='orange';
+    canvas1.fillRect(50, 50, 100, 50);//(x-axis, y-axis, width, height)
+    canvas1.stroke();//applying the stroke to rectangle
+    canvas1.fillStyle ="red";//here mentioning the fill color
+    canvas1.fill();//here we are applying the fill to rectangle
+    canvas1.closePath();//closing
+
+    canvas1
+  </script>
+  
+  
+</body>
+</html>
