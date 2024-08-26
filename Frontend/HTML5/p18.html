@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="fill"
+      style="border: 2px solid black; width: 500px; height: 500px"
+    ></canvas>
+
+    <script>
+      const canvas1 = document.getElementById("fill").getContext("2d");
+
+      canvas1.beginPath();
+      canvas1.moveTo(20, 40);
+      canvas1.quadraticCurveTo(50, 70, 200, 130);
+      canvas1.moveTo(20, 40);
+      canvas1.quadraticCurveTo(30, 70, 200, 130);
+      canvas1.closePath();
+      canvas1.stroke();
+    </script>
+
+    <canvas
+      id="fi"
+      style="border: 2px solid black; width: 500px; height: 500px"
+    >
+    </canvas>
+    <script>
+      const sons1 = document.getElementById("fi").getContext("2d");
+
+      // sons1.moveTo(50, 100);
+      // sons1.quadraticCurveTo(150, 20, 250, 100);
+      // sons1.stroke();
+      // sons1.closePath();
+
+      // sons1.beginPath();
+      // sons1.moveTo(45, 100);
+      // sons1.quadraticCurveTo(55, 80, 60, 100);
+      // sons1.stroke();
+      // sons1.closePath();
+
+      // sons1.beginPath();
+      // sons1.moveTo(45, 100);
+      // sons1.quadraticCurveTo(55, 120, 60, 100);
+      // sons1.stroke();
+      // sons1.closePath();
+
+      sons1.beginPath();
+      sons1.moveTo(40, 40);
+      sons1.lineTo(140, 40);
+      sons1.lineTo(140, 100);
+      sons1.lineTo(40, 100);
+      sons1.lineTo(40, 40);
+      // sons1.lineTo(100, 30);
+      // sons1.lineTo(200, 30);
+      // sons1.lineTo(140, 40);
+
+      sons1.stroke();
+      sons1.closePath();
+      sons1.beginPath();
+      sons1.moveTo(80, 20);
+      sons1.lineTo(180, 20);
+      sons1.lineTo(180, 80);
+      sons1.lineTo(80, 80);
+      sons1.lineTo(80, 20);
+
+      // sons1.lineTo(100, 30);
+      // sons1.lineTo(200, 30);
+      // sons1.lineTo(140, 40);
+
+      sons1.stroke();
+      sons1.closePath();
+
+      sons1.beginPath();
+      sons1.moveTo(180, 20);
+      sons1.lineTo(140, 40);
+      sons1.moveTo(40, 40);
+      sons1.lineTo(80, 20);
+      sons1.moveTo(180, 80);
+      sons1.lineTo(140, 100);
+      sons1.moveTo(80, 80);
+      sons1.lineTo(40, 100);
+      
+      // sons1.lineTo(180, 20);
+      // sons1.lineTo(180, 80);
+      // sons1.lineTo(80, 80);
+      // sons1.lineTo(80, 20);
+
+      // sons1.lineTo(100, 30);
+      // sons1.lineTo(200, 30);
+      // sons1.lineTo(140, 40);
+
+      sons1.stroke();
+      sons1.closePath();
+    </script>
+
+    <canvas
+      id="five"
+      style="border: 2px solid black; width: 500px; height: 500px"
+    >
+    </canvas>
+  </body>
+</html>
