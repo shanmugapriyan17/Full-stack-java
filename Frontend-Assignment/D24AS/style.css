@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+z * {
+  margin: o;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: rgb(123, 39, 39);
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #faaafe, #fef8aa, #c49b80);
+}
+
+table {
+  font-family: "Poppins", sans-serif;
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+table caption {
+  margin-bottom: 40px;
+  color: rgb(36, 33, 33);
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+table caption span {
+  color: rgb(123, 39, 39);
+}
+
+table td,
+th {
+  padding: 15px 100px;
+}
+
+table tr td {
+  font-size: 1.2rem;
+}
+
+table tr th:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+table tr:nth-child(2) td:hover {
+  background-color: rgba(186, 212, 149, 0.334);
+}
+
+table tr:nth-child(3) td:hover {
+  background-color: rgba(193, 149, 195, 0.334);
+}
+
+table tr:nth-child(4) td:hover {
+  background-color: rgba(149, 194, 195, 0.6334);
+}
+table tr:nth-child(5) td:hover {
+  background-color: rgba(195, 181, 149, 0.334);
+}
+table tr:nth-child(6) td:hover {
+  background-color: rgba(237, 150, 179, 0.334);
+}
+table tr:nth-child(7) td:hover {
+  background-color: rgba(220, 228, 108, 0.334);
+}
+table tr:nth-child(8) td:hover {
+  background-color: rgba(176, 101, 223, 0.334);
+}
+table tr:nth-child(9) td:hover {
+  background-color: rgba(40, 235, 177, 0.334);
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
