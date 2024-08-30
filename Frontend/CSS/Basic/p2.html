@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h2{
+      background-color: aqua;
+      color: aliceblue;
+      padding: 20px;
+      border: 2px solid black;
+      border-radius: 20px;
+
+    }
+    h3{
+      background-color: rgb(246, 255, 0);
+      color: aliceblue;
+      padding: 20px;
+      border: 2px solid black;
+      border-radius: 20px;
+
+    }
+
+    /* <.to select the class using . > */
+    .div{
+      padding: 20px;
+      color: black;
+      box-shadow: 0px 2px 2px white;
+      border-radius: 10px;
+      margin: auto;
+      width: fit-content;
+    }
+    .div:hover{
+      background-color: black;
+      color: white;
+      transition: 0.4s;
+      
+    }
+    /* by using parent naem we can apply the style to particular element */
+    .div h1:hover{
+      color: chartreuse;
+      transition: 0.4s;
+    }
+  </style>
+</head>
+<body>
+  <h1>How to declare a css</h1>
+  <ol>
+    <li>Inline CSS(using style attributes)</li>
+    <li>Internal CSS(using style tag inside the head tag)</li>
+    <li>External CSS(using .css extenstion)</li>
+  </ol>
+
+  <h1>Internal CSS (using style tag inside the head tag)</h1>
+  <h2>This is the heading tag</h2>
+  <h3>This is the heading tag</h3>
+
+  <div class="div">
+    <h1>This the heading</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In sit expedita aliquid totam dolorem nihil?</p>
+  </div>
+  
+  <hr>
+</body>
+</html>
