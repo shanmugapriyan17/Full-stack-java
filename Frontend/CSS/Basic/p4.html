@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>selector</title>
+  <style>
+    /* to select the element name and we can apply style */
+    section{
+      padding: 10px;
+      background-color: aquamarine;
+      color: aliceblue;
+      font-size: 10px;
+      line-height: 1px;
+    }
+    /* to select the id name using (#)sybmbol and name we can apply style */
+    #element{
+      padding: 13px;
+      background-color: blanchedalmond;
+      color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1rem;
+      line-height: 2;
+    }
+    /* to select the class name using (.)sybmbol and name we can apply style */
+    .class{
+      padding: 5px;
+      background-color:cadetblue;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 3rem;
+      line-height: 3;
+
+    }
+    /* to select the attribute name using ([""])sybmbol and name we can apply style */
+    a[href]{
+      padding: 5px;
+      margin: 8px;
+      font-size: 2rem;
+      color: red;
+      background-color: aquamarine;
+    }
+    [placeholder]{
+      font-size: larger;
+      background-color: rgba(128, 128, 128, 0.326);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      outline: none;
+      border: none;
+      box-shadow:inset 0px -3px 2px blue;
+      display: block;
+      
+    }
+     /* to select the attribute and value name using ([""])sybmbol and name we can apply style */
+    a[href="./p2.html"]{
+      font-size: large;
+      border: 20px solid black;
+      
+    }
+  </style>
+</head>
+<body>
+  <h3>CSS selector (How to call an element under stylee tag..)!</h3>
+  <ol>
+    <li>Using Element name</li>
+    <li>Using element id</li>
+    <li>Using class</li>
+    <li>Using attributes</li>
+    <li>Using Attributes and Its values</li>
+  </ol>
+
+  <!-- <h1>Using Element name</h1> -->
+   <section>
+    <h1>this is heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ipsum laborum consequuntur possimus, eligendi accusamus.</p>
+   </section> 
+
+
+  <!-- <h1>Using element id</h1> -->
+  <div id="element"> 
+    <h1>this is heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ipsum laborum consequuntur possimus, eligendi accusamus.</p>
+   </div> 
+
+
+
+  <!-- <h1>Using class</h1> -->
+  <div class="class"> 
+    <h1>this is heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ipsum laborum consequuntur possimus, eligendi accusamus.</p>
+   </div> 
+  
+   <!-- <h1>Using Attributes</h1> -->
+   <input class="i" id="ddd" placeholder="ff">
+   <input class="i" id="ddd" placeholder="ff">
+
+   <a href="#" target="_blank">GG</a>
+   <a href="#" target="_parent">GG</a>
+
+   <!-- <h1>Using Attributes and Its values</h1> -->
+
+   <a class="file" target="_blank" href="./p2.html">dd</a>
+</body>
+</html>
