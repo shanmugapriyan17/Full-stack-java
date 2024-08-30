@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector section 2</title>
+  <style>
+    .con{
+      padding: 20px;
+      background-color: palevioletred;
+
+    }
+    .con > h3{
+      background-color: antiquewhite;
+      color: black;
+      padding: 30px;
+    }
+    /* this tag only applying for the child not for grand child*/
+  </style>
+</head>
+<body>
+  <center>
+    <h1>There are 4 differnet combination in css..!</h1>
+  </center>
+  <hr>
+  <ol>
+    <li>Decendent selector (USING SPACE)</li>
+    <li>Child selector (USING > SYMBOL)</li>
+    <li>Adjacent sibiling selecctor (USING + SYMBOL)</li>
+    <li>General Sibiling Selector (USING ~ SYMBOL)</li>
+  </ol>
+  <!-- <H1>Child selector (USING > SYMBOL) example</H1> -->
+   <section class="con" id="desec">
+    <!-- Child for section -->
+     <h3>this the heading</h3>
+     <p>this is th paragraph</p>
+
+     <h3>this the heading</h3>
+     <p>this is th paragraph</p>
+
+    <div>
+      <!-- this is the grand child for the selector -->
+      <h3>this the heading</h3>
+      <p>this is th paragraph</p>
+    </div>
+     
+   </section>
+  
+</body>
+</html>
