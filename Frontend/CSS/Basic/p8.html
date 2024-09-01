@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector section 2</title>
+    <style>
+      .con {
+        padding: 20px;
+        background-color: palevioletred;
+      }
+      .con + h3 {
+        background-color: antiquewhite;
+        color: black;
+        padding: 30px;
+      }
+      /* this tag only applying for the first element*/
+
+      .con + div {
+        color: aqua;
+        background-color: antiquewhite;
+      }
+
+      .re ~ h3 {
+        color: #000;
+        background-color: white;
+      }
+      .re h3 ~ p {
+        color: aliceblue;
+      }
+      div ~ button {
+        padding: 20px;
+        color: aliceblue;
+        background-color: #000;
+      }
+      .con + .re + .first + .second + .third + .hello {
+        border-radius: 20px;
+        padding: 20px;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>There are 4 differnet combination in.!</h1>
+    </center>
+    <hr />
+    <ol>
+      <li>Decendent selector (USING SPACE)</li>
+      <li>Child selector (USING > SYMBOL)</li>
+      <li>Adjacent sibiling selecctor (USING + SYMBOL)</li>
+      <li>General Sibiling Selector (USING ~ SYMBOL)</li>
+    </ol>
+    <!-- <H1>General Sibiling Selector (USING ~ SYMBOL example</H1> -->
+    <section class="con" id="desec">
+      <!-- Child for section -->
+      <h3>this the heading</h3>
+      <p>this is th paragraph</p>
+
+      <h3>this the heading</h3>
+      <p>this is th paragraph</p>
+    </section>
+    <div class="re">
+      <!-- this is the grand child for the selector -->
+      <h3>this the heading</h3>
+      <p>this is th paragraph</p>
+    </div>
+    <button class="first">BTN</button>
+    <button class="second">BTN</button>
+    <button class="third">BTN</button>
+
+    <img
+      src="https://th.bing.com/th/id/OIP.tLotgCDtzgTdwJcTiXWRCwHaEK?rs=1&pid=ImgDetMain"
+      alt="img"
+      class="hello"
+    />
+  </body>
+</html>
