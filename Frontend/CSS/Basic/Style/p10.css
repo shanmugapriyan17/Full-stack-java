@@ -1,0 +1,12 @@
+.cssFonts{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  font-size: calc(20px + 2px);
+  font-variant: small-caps;
+  font-style: italic;
+
+
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; this is form css fonts font-family
+  font-family: "Nurko One" , cursive; this th font from google font */
+}
+
