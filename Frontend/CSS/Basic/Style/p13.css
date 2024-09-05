@@ -1,0 +1,16 @@
+.list-marker-postion{
+  background-color: yellow;
+  color: red;
+  padding: 10px;
+  margin-bottom: 5px;
+  /* list-style-position: outside; */
+  list-style-position: inside;
+
+}
+.list-marker-postion li::marker{
+  content: "❤️";
+  color: blue;
+  font-size: 2rem;
+  font-weight: bolder;
+  
+}

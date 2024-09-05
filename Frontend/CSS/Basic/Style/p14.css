@@ -1,0 +1,8 @@
+.list-icon{
+  list-style-image: url(../Assets/img/approved.png) ; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  list-style-position: inside;
+  font-size: 1.2rem;
+}
+
