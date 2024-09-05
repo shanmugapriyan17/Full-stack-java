@@ -1,0 +1,25 @@
+.csscolor{
+  padding: 30px;
+  margin: 40px;
+  font-size: 1.3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid black;
+}
+.csscolor1{
+  /* keyword */
+  background-color: yellowgreen;
+  color: darkgreen;
+  border: 5px solid darkgreen;
+}
+.csscolor2{
+  /* hex or hexa */
+  color: #1b00c8;
+  background-color: #1b00c850;
+  /* to make transparent we can use 'a' value at end of hex code */
+  border: 5px solid #1b00c8;
+}
+.csscolor3{
+  /* rgb value */
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 25, 255, 0.3);
+}

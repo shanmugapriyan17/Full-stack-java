@@ -1,0 +1,24 @@
+/* <.to select the class using . > */
+.div{
+  padding: 20px;
+  color: black;
+  box-shadow: 0px 2px 2px white;
+  border-radius: 10px;
+  margin: auto;
+  width: fit-content;
+}
+.div:hover{
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+  
+}
+.div h1{
+  width: fit-content;
+}
+/* by using parent naem we can apply the style to particular element */
+.div h1:hover{
+  color: chartreuse;
+  transition: 0.4s;
+
+}
