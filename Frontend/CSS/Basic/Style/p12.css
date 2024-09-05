@@ -1,0 +1,27 @@
+.navi1{
+  background-color: #1b00c8;
+  padding: 0px 30px;
+}
+.navi1 nav{
+  float: right;
+  
+}
+.navi1 nav ul li{
+  display: inline-block;
+  margin-left: 10px;
+  padding: 15px;
+
+}
+.navi1 nav ul li a{
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navi1 img{
+  width: 80px;
+  height: 80px;
+}
+.navi1 li:hover{
+  background-color: #1b00c899;
+}
