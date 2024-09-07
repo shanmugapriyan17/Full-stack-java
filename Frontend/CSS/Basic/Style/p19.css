@@ -1,0 +1,12 @@
+.table-layout{
+  border-collapse:collapse;
+  width: 100%;
+  table-layout: fixed;
+  
+}
+
+.table-layout tr td{
+   /* overflow: hidden; */
+   overflow: auto;
+
+}
