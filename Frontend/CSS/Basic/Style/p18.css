@@ -1,0 +1,14 @@
+.empty{
+  margin: auto;
+  empty-cells: hide;
+  border: 1px solid white;
+  border-collapse:collapse ;
+  
+}
+
+.empty th{
+  background-color: rgb(255, 165, 0);
+  border: 1px solid white;
+
+}
+
