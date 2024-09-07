@@ -1,0 +1,7 @@
+.list-shortend li{
+  padding: 2px;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  list-style: armenian url(../Assets/img/approved.png) inside disc;
+}
