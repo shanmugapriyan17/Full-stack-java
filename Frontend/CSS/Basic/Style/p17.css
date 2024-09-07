@@ -1,0 +1,19 @@
+.empty-cells{
+  background-color:yellow;
+  font-family: 'Times New Roman', Times, serif;
+  empty-cells: hide;
+  margin: auto;
+}
+
+.empty-cells td{
+
+  background-color: aqua;
+  font-weight: bolder;
+
+}
+
+.empty-cells th{
+
+  background-color: bisque;
+
+}
