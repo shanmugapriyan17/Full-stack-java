@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Spectral SC", serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #492301, #230101b3, #250000);
+  overflow: hidden;
+}
+.book{
+  width: 400px;
+  height: 500px;
+  box-shadow: 10px 10px 10px #ccc;
+  background: 
+    linear-gradient(rgba(109, 6, 6, 0.5), rgba(78, 28, 16, 0.789),rgba(163, 71, 31, 0.871)), /* Gradient on top */
+    url(./IMG/Untitled_design__2_-removebg-preview.png); /* Background image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;  
+  border-top: 2px solid #611e0adf;   
+  border-right: 0px solid black; 
+  border-bottom: 0px solid black;
+  border-left: 20px solid  #3e0101;   
+  border-top-left-radius: 20px;     
+  border-top-right-radius: 40px;  
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 80px; 
+  
+  
+}
+
+.book:hover {
+  transform: scale(0.995); 
+  cursor: pointer;
+}
+.book .sheet{
+  width: 120px;
+  padding: 2px;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg, #1e4902, #77b004, #e1fa71);
+  position: absolute;
+  right: -15px;
+  transform: rotate(0deg);
+  font-size: 0.9rem;
+  top: 40px;
+  text-align: center;
+  border-top-left-radius: 5px;     
+  border-top-right-radius: 40px;  
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 80px; 
+  
+}
+
+.book .sheet1{
+  width: 380px;
+  padding: 2px;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg, #302d0dd2, #77b0045a, #303a04e2);
+  position: absolute;
+  right: 0px;
+  transform: rotate(0deg);
+  top: 225px;
+  text-align: center;
+  border-radius: 2px;
+}
+.book .sheet:before{
+  /* content: ""; */
+  position: absolute;
+
+  background-color: transparent;
+  border: 10px;
+  border-color:  rgb(41, 16, 0) rgb(41, 16, 0) rgb(41, 16, 0) rgb(41, 16, 0);
+  border-style: solid;
+  left: 0px;
+  bottom: -15px;
+  transform: rotate(100deg);
+  
+}
+
+.book .sheet:after{
+  content: "";
+  position: absolute;
+
+  background-color: transparent;
+  border: 15px;
+  border-color: transparent transparent transparent rgba(93, 126, 4, 0.892);
+  border-style: solid;
+  border-radius: 100px;
+  right: 1px;
+  bottom: -14px;
+  transform: rotate(225deg);
+  border-top-left-radius: 20px;     
+  border-top-right-radius: 40px;  
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 80px; 
+}
+
+.sheet1::after{
+  content: "---";
+  width: 30px;
+  height: 35px;
+  color: #d5d893;
+  background: linear-gradient(45deg, #d5d893, #d5d893, #d5d893);
+  /* background-color: #d5d893; */
+  position: absolute;
+  border: 1px;
+  
+  border-style: solid;border-color: #222300 transparent transparent transparent;
+  left: 70px;
+  bottom: -280px;
+  /* transform: rotate(0deg); */
+  transform: skewX(35deg);
+  /* transform: translate(30deg); */
+  
+}
+.sheet1::before{
+  content: "---";
+  width: 30px;
+  height: 35px;
+  color: #d5d893;
+  background: linear-gradient(45deg, #c50c0c, #d5d893, #d5d893);
+  /* background-color: #d5d893; */
+  position: absolute;
+  border: 1px;
+  
+  border-style: solid;border-color: #222300 transparent transparent transparent;
+  left: 71px;
+  bottom: -317px;
+  /* transform: rotate(0deg); */
+  transform: skewX(-35deg);
+  /* transform: translate(30deg); */
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
