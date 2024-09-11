@@ -1,0 +1,100 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
+}
+
+header h1{
+  text-align: center;
+  color: rgb(239, 55, 55);
+  padding: 20px 50px 50px;
+  background-color: rgb(252, 197, 233);
+  border: 2px solid rgba(225, 120, 195, 0.468);
+  border-radius: 10px;
+}
+.main{
+  background-color: azure;
+  padding: 30px;
+  margin: 20px 0px;
+  border: none;
+}
+
+section h1{
+  text-align: center;
+  padding: 30px 50px 40px;
+  font-size: 2.5rem;
+  color: rgb(202, 57, 81);
+}
+div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  width: 40%;
+  height: 40%;
+}
+
+.padding .p1{
+  padding: 20px;
+  background-color: rgb(255, 195, 195);
+   
+    
+}
+.padding .p2{
+  padding: 5px 10px;
+  background-color: aquamarine;
+}
+
+.padding .p3{
+  padding: 5px 10px 50px;
+  background-color: blanchedalmond;
+}
+.padding .p4{
+  padding: 3px 5px 8px 10px;
+  background-color: wheat;
+}
+
+.margin .m1{
+  margin: 10px;
+  background-color: rgb(149, 173, 226);
+  
+}
+
+.margin .m2{
+  margin: 20px 30px;
+  background-color: rgb(169, 240, 216);
+}
+.margin .m3{
+  margin: 50px 40px 70px;
+  background-color: rgb(195, 234, 155);
+}
+.margin .m4{
+  margin: 30px 40px 50px 100px;
+  background-color: cornflowerblue;
+}
+
+.border .b1{
+  border: 5px solid cadetblue;
+}
+
+.border .b2{
+  border-width: 6px 4px;
+  border-style: dotted;
+  border-color: tomato rgb(90, 6, 90);
+}
+.border .b3{
+  border-width: 10px 12px 19px;
+  border-style: double;
+  border-color: darkblue darksalmon cyan darksalmon ;
+}
+.border .b4{
+  border-width: 10px 15px 18px 20px;
+  border-style: groove;
+  border-color: yellowgreen thistle firebrick gold;
+}
