@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .book{
+            width: 300px;
+            height: 400px;
+            background-color: aqua;
+            transform: skew(20deg);
+            background: radial-gradient(#4c2e16, #2d1306);
+            box-shadow: inset 3px 4px 10px #0c0c0c;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 30px 10px;
+        }
+
+        .book:before{
+            content: "";
+            width: 60px;
+            height: 100%;
+            background-color: blueviolet;
+            position: absolute;
+            left: -60px;
+            top: 26px;
+            transform: skewY(-40deg);
+            background: linear-gradient(95deg, #0a0502, #3e1f10);
+        }
+        .book::after{
+            content: "";
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            background-color: blue;
+            bottom: -50px;
+            left: -29px;
+            transform: skewX(-50deg);
+            background: repeating-linear-gradient( #2f1d0c, #180800 10%);
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: radial-gradient(#4c2e16, #412311, #150f09);
+            
+        }
+        .book img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="book">
+        <h1 style="text-align: center;">1886</h1>
+        <h1 style="text-align: center;">DEVIL KINGDOM</h1>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, consequatur.</p>
+        <img src="https://png.pngtree.com/png-vector/20240528/ourmid/pngtree-black-devil-face-with-hair-and-horns-silhouette-vector-png-image_6952820.png" alt="devil coming...">
+    </div>
+</body>
+</html>
