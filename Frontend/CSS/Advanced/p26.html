@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            width: 300px;
+            height: 350px;
+            box-shadow: 0px 0px 10px #ccc;
+            position: relative;
+        }
+        .card .badge{
+            width: 150px;
+            padding: 2px;
+            font-size: 1.2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(45deg, #96550a, #ffa45e, #6a4100);
+            position: absolute;
+            right: -50px;
+            transform: rotate(45deg);
+            top: 20px;
+            text-align: center;
+        }
+        .card .badge:before{
+            content: "";
+            position: absolute;
+          
+            background-color: transparent;
+            border: 8px;
+            border-color: transparent transparent rgb(41, 16, 0) transparent;
+            border-style: solid;
+            left: 0px;
+            bottom: -15px;
+            transform: rotate(180deg);
+        }
+
+        .card .badge:after{
+            content: "";
+            position: absolute;
+          
+            background-color: transparent;
+            border: 20px;
+            border-color: transparent red transparent black;
+            border-style: solid;
+            right: 0px;
+            bottom: -15px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="badge">Offer</div>
+    </div>
+</body>
+</html>
