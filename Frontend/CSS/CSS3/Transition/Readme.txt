@@ -1,1 +1,1 @@
-CSS3 : Transition Section
+CSS3 : Transition daily activity files upload in this folder
