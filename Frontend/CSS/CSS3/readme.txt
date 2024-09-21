@@ -1,2 +1,1 @@
-CSS 3 : Daily activity files are uploaded in this folder
-
+CSS3 : Daily activity files are upload here
