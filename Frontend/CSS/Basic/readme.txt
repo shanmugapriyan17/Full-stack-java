@@ -1,1 +1,2 @@
-Basic CSS : Daily activity files are uploaded in this folder
+Basic CSS : Daily activity files are uploaded here
+
