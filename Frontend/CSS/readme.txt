@@ -1,1 +1,1 @@
-CSS : Daily files upadted here
+CSS : Daily activity files upload here
