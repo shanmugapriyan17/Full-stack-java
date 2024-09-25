@@ -1,0 +1,63 @@
+
+   *{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+   }
+   .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.586) rgba(244, 240, 240, 0.258) rgba(0, 0, 0, 0.455));
+   }
+
+   .box .video-in{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 2rem;
+    border: 2px solid black;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: rgba(15, 13, 13, 0.888);
+   }
+   .box div .namebox {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     background-color: rgba(192, 192, 192, 0.34);
+
+   }
+   input,button{
+    font-size: 1.8rem;
+    padding: 5px 3px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(192, 192, 192, 0.34);
+
+   }
+
+   .box div .namebox .name{
+    border: none;
+    margin-left: 10px;
+    background-color: transparent;
+
+   }
+   input::placeholder{
+     text-align:left;
+   }
+   video{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 100vh;
+    
+   }
+   .video{
+     position: absolute;
+   }
+   
