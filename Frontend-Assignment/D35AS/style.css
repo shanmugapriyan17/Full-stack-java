@@ -1,0 +1,96 @@
+.tooltip{
+  padding: 20px;
+  width: fit-content;
+  position: relative;
+}
+.tooltip *{
+  margin: 0;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2222224c;
+}
+.tooltip i{
+  font-size: 4rem;
+}
+.content{
+  padding: 20px;
+  background-color: #222222;
+  width: 200px;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  right: 50%;
+  transform: translateX(55%);
+  border-radius: 20px;
+  top: 100px;
+  font-size: 0.9rem;
+  display: none;
+}
+.content p{
+ margin-top: 10px;
+}
+.content::before{
+  content: "";
+  position: absolute; 
+  border: 20px;
+  border-color: transparent transparent #222 transparent;
+  border-style: solid;
+  left: 90px;
+  top: -35px;
+}
+.tooltip:hover .content{
+  display: block;
+}
+
+.tooltip1:hover .content{
+  display: block;
+}
+
+
+.tooltip2:hover .content{
+  display: block;
+}
+
+.tooltip3:hover .content{
+  display: block;
+}
+
+
+
+
+
+.tooltip1{
+  padding: 20px;
+  width: fit-content;
+  position: relative;
+}
+
+.tooltip2{
+  padding: 20px;
+  width: fit-content;
+  position: relative;
+}
+
+.tooltip3{
+  padding: 20px;
+  width: fit-content;
+  position: relative;
+}
+
+.tooltip1 i{
+  font-size: 4rem;
+}
+
+.tooltip2 i{
+  font-size: 4rem;
+}
+
+.tooltip3 i{
+  font-size: 4rem;
+  
+}
