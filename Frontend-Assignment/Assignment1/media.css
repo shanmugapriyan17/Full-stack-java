@@ -1,0 +1,158 @@
+/* MEDIA.CSS - 768px */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .header img {
+    width: 80px;
+    height: auto;
+  }
+
+  .header .text {
+    gap: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .hero-left h1 {
+    font-size: 3rem;
+    padding: 50px;
+  }
+
+  .hero-right p {
+    font-size: 1.5rem;
+  }
+
+  .hero-2 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .hero-3 .boxes {
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .box-main {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .hero5 {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .hero5-left img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero6{
+    padding: none;
+
+    
+  }
+
+  .hero6-boxs {
+    grid-template-columns: 1fr;
+    padding: none;
+    gap: 10px;
+    
+  }
+
+  .hero6-box {
+    width: 100%;
+  }
+
+  .hero-4 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .hero4{
+    flex-direction: row;
+  }
+}
+
+
+/* MEDIA.CSS - 576px */
+
+@media (max-width: 576px) {
+  header {
+      padding: 10px;
+      text-align: center; 
+  }
+
+  header h1 {
+      font-size: 1.5rem;
+  }
+  .hero6{
+    padding: none;
+    
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 5px;
+      padding: 0; 
+  }
+
+  nav a {
+      font-size: 0.9rem;
+  }
+
+  .hero {
+      flex-direction: column; 
+      padding: 10% 5%;
+      min-height: auto; 
+  }
+
+  .hero-left h1 {
+      font-size: 1.8rem;
+  }
+
+  .hero-left p {
+      font-size: 1rem;
+  }
+
+  .hero-right {
+      width: 100%; 
+      display: flex;
+      justify-content: center; 
+      margin-top: 20px; 
+  }
+
+  .hero-right img {
+      max-width: 90%; 
+      height: auto;
+  }
+
+  .section {
+      padding: 5% 2%; 
+  }
+
+  .section h2 {
+      font-size: 2rem;
+  }
+
+  .section p {
+      font-size: 0.9rem;
+  }
+
+  .hero6-box {
+      padding: 15px; 
+  }
+
+  footer {
+      font-size: 0.9rem;
+  }
+}
