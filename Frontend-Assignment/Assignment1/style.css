@@ -4,27 +4,24 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
-body{
-  overflow-x: hidden;
-}
-.header{
+.header {
   display: flex;
   flex-direction: row;
-  padding: 15px 100px;
+  padding: 15px 80px;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(225, 229, 233);
 }
-.header img{
-  width: 100px;
-  height: 60px;
+
+.header img {
+  width: 80px;
+  height: 50px;
 }
 .header .text {
   display: flex;
-  flex-direction: row;
-  gap: 50px;
+  gap: 30px;
 }
-.p1,.p2{
+.p1, .p2 {
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -155,7 +152,7 @@ body{
  
   
 }
-.dev{
+.div{
   font-size: 1.3rem;
   color: rgb(83, 129, 14);
   
@@ -173,15 +170,15 @@ body{
   cursor: pointer;
   
 }
-.hero-4{
+.hero-4 {
   display: flex;
   flex-direction: row;
-  padding: 40px 30px;
-  gap: 20px;
+  gap: 30px;
+  align-items: center;
   justify-content: space-around;
   background-color: rgb(59, 64, 76);
-  color: #fff;
-  margin-top: 50px;
+  color: white;
+  padding: 30px;
 }
 .hero-4 h1{
   font-size: 1.5rem;
@@ -197,9 +194,108 @@ body{
 }
 .footer{
   text-align: center;
-  padding: 40px 30px;
+  padding-bottom: 40px;
   color: #fff;
   background-color: rgb(59, 64, 76);
 }
+
+.hero5{
+  margin-top: 50px;
+  padding: 50px 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(59, 64, 76, 0.16);
+
+}
+.hero5-left{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.hero5-left img{
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 2px 2px rgb(39, 38, 38);
+}
+.hero5-right{
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+
+}
+.hero5-right h1{
+  font-size: 1.4rem;
+  
+}
+.hero5-right p{
+  font-size: 1.1rem;
+}
+.hero5-right ul li{
+  padding-left: 20px;
+  padding-bottom: 2px;
+  list-style-position: inside;
+
+}
+.hero5-right ul li::marker{
+  content: "✔️";
+}
+
+.hero6{
+  margin-top: 30px;
+  padding: 3rem;
+  
+}
+.hero6-boxs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 2rem;
+  
+}
+.hero6-box{
+  background-color: rgba(59, 64, 76, 0.16);
+}
+.hero6-boxs img{
+  width: 100%;
+}
+.hero6-icon{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+.hero6-icon i{
+  padding: 10px;
+  font-size: 1.1rem;
+  background-color: #ffffff;
+  border-radius: 100px;
+  transform: translateY(-20px);
+
+}
+.hero6-icon i:hover{
+  background-color: rgb(59, 64, 76);
+  color: white;
+  transition: all 1s;
+
+}
+.hero6-img-content{
+  text-align: center;
+  transform: translateY(-10px);
+}
+
+footer{
+
+  
+}
+
+
+
 
 
