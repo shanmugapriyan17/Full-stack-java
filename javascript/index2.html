@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    center h1{
+      padding-top: 20px;
+      text-transform: uppercase;
+      color: rgb(164, 53, 53);
+    }
+    body{
+      background-color: rgba(46, 44, 43, 0.362);
+    }
+    .sec{
+      margin-top: px;
+      padding: 20px 30px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 40px;
+    }
+    .sec div h1{
+      padding: 10px 0px;
+
+    }
+    .sec div input{
+      cursor: pointer;
+      transform: scale(1.5);
+    }
+    .sec div label{
+      font-size: 1.2rem;
+      line-height: 30px;
+      margin-left: 5px;
+     
+    }
+    .sec div h1{
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+    
+    
+
+  </style>
+</head>
+<body>
+  <center>
+    <h1>Quiz</h1>
+  </center>
+
+  <script>
+            let quizdata =[
+          {
+            "_id": "653b50df1bc6527630cb9061",
+            "question": "What is the primary purpose of version control in software development?",
+            "answers": [
+              "Code execution",
+              "Code testing",
+              "Code collaboration",
+              "Code encryption"
+            ],
+            "correctAnswer": "Code collaboration",
+            "__v": 0
+          },
+          {
+            "_id": "653b857a51a640a11aa11bd2",
+            "question": "Which programming language is commonly used for server-side web ",
+            "answers": [
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "Python"
+            ],
+            "correctAnswer": "Python",
+            "__v": 0
+          },
+          {
+            "_id": "653b85e951a640a11aa11bd5",
+            "question": "What does the 'M' stand for in the 'MVC' architectural pattern",
+            "answers": [
+              "Model",
+              "View",
+              "Controller",
+              "Markup"
+            ],
+            "correctAnswer": "Model",
+            "__v": 0
+          },
+          {
+            "_id": "653b861151a640a11aa11bd7",
+            "question": " Which database type is known for its ability to handle complex relationships and is suitable for graph-based data?",
+            "answers": [
+              "Relational Database",
+              "NoSQL Database",
+              "Document Database",
+              "Graph Database"
+            ],
+            "correctAnswer": "Graph Database",
+            "__v": 0
+          },
+          {
+            "_id": "653b867551a640a11aa11bd9",
+            "question": "What does the acronym 'HTTP' stand for in the context of web development?",
+            "answers": [
+              "Hyperlink Text Transfer Protocol",
+              "Hypertext Transmission Protocol",
+              "Hypertext Transfer Protocol",
+              "Hypertext Text Protocol"
+            ],
+            "correctAnswer": "Hypertext Transfer Protocol",
+            "__v": 0
+          },
+          {
+            "_id": "653b86b651a640a11aa11bdb",
+            "question": "Which of the following is NOT a commonly used front-end web development framework?",
+            "answers": [
+              "Angular",
+              "React",
+              "Django",
+              "Vue.js"
+            ],
+            "correctAnswer": "Django",
+            "__v": 0
+          }
+        ]
+
+        document.write(`<section class="sec">
+          <div class="card1 c">
+            <hr>
+            <h1>${quizdata[0].question}</h1>
+            <input type="radio" id="ans01" name="option" value="ans01">
+            <label for="ans01">${quizdata[0].answers[0]}</label><br>
+            <input type="radio" id="ans02" name="option" value="ans02">
+            <label for="ans02">${quizdata[0].answers[1]}</label><br>
+            <input type="radio" id="ans03" name="option" value="ans03">
+            <label for="ans03">${quizdata[0].answers[2]}</label><br>
+            <input type="radio" id="ans04" name="option" value="ans04">
+            <label for="ans04">${quizdata[0].answers[3]}</label><br>
+             <hr>
+          </div>
+          <div class="card2 c">
+            <hr>
+            <h1>${quizdata[1].question}</h1>
+            <input type="radio" id="ans11" name="option" value="ans11">
+            <label for="ans11">${quizdata[1].answers[0]}</label><br>
+            <input type="radio" id="ans12" name="option" value="ans12">
+            <label for="ans12">${quizdata[1].answers[1]}</label><br>
+            <input type="radio" id="ans13" name="option" value="ans13">
+            <label for="ans13">${quizdata[1].answers[2]}</label><br>
+            <input type="radio" id="ans14" name="option" value="ans14">
+            <label for="ans14">${quizdata[1].answers[3]}</label><br>
+             <hr>
+          </div>
+          <div class="card3 c">
+             <hr>
+            <h1>${quizdata[2].question}</h1>
+            <input type="radio" id="ans21" name="option" value="ans21">
+            <label for="ans21">${quizdata[2].answers[0]}</label><br>
+            <input type="radio" id="ans22" name="option" value="ans22">
+            <label for="ans22">${quizdata[2].answers[1]}</label><br>
+            <input type="radio" id="ans23" name="option" value="ans23">
+            <label for="ans23">${quizdata[2].answers[2]}</label><br>
+            <input type="radio" id="ans24" name="option" value="ans24">
+            <label for="ans24">${quizdata[2].answers[3]}</label><br>
+             <hr>
+          </div>
+          <div class="card4 c">
+             <hr>
+            <h1>${quizdata[3].question}</h1>
+            <input type="radio" id="ans31" name="option" value="ans31">
+            <label for="ans31">${quizdata[3].answers[0]}</label><br>
+            <input type="radio" id="ans32" name="option" value="ans32">
+            <label for="ans32">${quizdata[3].answers[1]}</label><br>
+            <input type="radio" id="ans33" name="option" value="ans33">
+            <label for="ans33">${quizdata[3].answers[2]}</label><br>
+            <input type="radio" id="ans34" name="option" value="ans34">
+            <label for="ans34">${quizdata[3].answers[3]}</label><br>
+             <hr>
+          </div>
+          <div class="card5 c">
+             <hr>
+            <h1>${quizdata[4].question}</h1>
+            <input type="radio" id="ans41" name="option" value="ans41">
+            <label for="ans41">${quizdata[4].answers[0]}</label><br>
+            <input type="radio" id="ans42" name="option" value="ans42">
+            <label for="ans42">${quizdata[4].answers[1]}</label><br>
+            <input type="radio" id="ans43" name="option" value="ans43">
+            <label for="ans43">${quizdata[4].answers[2]}</label><br>
+            <input type="radio" id="ans44" name="option" value="ans44">
+            <label for="ans44">${quizdata[4].answers[3]}</label><br>
+             <hr>
+          </div>
+          <div class="card6 c">
+             <hr>
+            <h1>${quizdata[5].question}</h1>
+            <input type="radio" id="ans51" name="option" value="ans51">
+            <label for="ans51">${quizdata[5].answers[0]}</label><br>
+            <input type="radio" id="ans52" name="option" value="ans52">
+            <label for="ans52">${quizdata[5].answers[1]}</label><br>
+            <input type="radio" id="ans53" name="option" value="ans53">
+            <label for="ans53">${quizdata[5].answers[2]}</label><br>
+            <input type="radio" id="ans54" name="option" value="ans54">
+            <label for="ans54">${quizdata[5].answers[3]}</label><br>
+             <hr>
+          </div>
+          
+          
+          
+        </section>`)
+
+  </script>
+  
+</body>
+</html>

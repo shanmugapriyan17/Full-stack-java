@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <center>
+    <h1>TYPES OF ARRAY</h1>
+    <p>
+      <ol>
+        <li>Literal</li>
+        <li>Arrays creating using Constructor method</li>
+        <li>Arrays creating using Constructor with paratameter</li>
+      </ol>
+    </p>
+  </center>
+  <script>
+    // User details using an array literal
+    let user1 = ["Shanmugapriyan S", "ranjithssp2003@gmail.com", "+91-9894982411", "17/01/2003","Tamilnadu","7311120205032","Be practical","Java full stack"];
+    console.log("User 1 Details:");//0
+    console.log("Name:", user1[0]);//1
+    console.log("Email:", user1[1]);//2
+    console.log("Phone:", user1[2]);//3
+    console.log("Date of Birth:", user1[3]);//4
+    console.log("Address:", user1[4] );//5
+    console.log("Roll No:", user1[5]);//6
+    console.log("Institute:", user1[6]);//7
+    console.log("course:", user1[7]);//8
+    console.log("Empty:", user1[8]);//9
+
+
+    // Creating an array using Array constructor without parameters
+      let user2 = new Array();
+      user2[0] = "John Doe";
+      user2[1] = "johndoe@example.com";
+      user2[2] = "+91-1234567890";
+      user2[3] = "01/01/2000";
+      user2[4] = "Delhi";
+      user2[5] = "731120205033";
+      user2[6] = "621710";
+      user2[7] = "Phyton full stack";
+      user2[8] = "Empty";
+      
+
+      console.log("\nUser 2 Details:");
+      console.log("Name:", user2[0]);
+      console.log("Email:", user2[1]);
+      console.log("Phone:", user2[2]);
+      console.log("Date of Birth:", user2[3]);
+      console.log("Address:", user2[4] );
+      console.log("Roll No:", user2[5]);
+      console.log("Pincode", user2[6]);
+      console.log("course:", user2[7]);
+      console.log("Empty:", user2[8]);
+
+
+      // Creating an array using Array constructor with parameters
+      let user3 = new Array("Jane Doe", "janedoe@example.com", "+91-9876543210", "05/05/1995");
+      console.log("\nUser 3 Details:");
+      console.log("Name:", user3[0]);
+      console.log("Email:", user3[1]);
+      console.log("Phone:", user3[2]);
+      console.log("Date of Birth:", user3[3]);
+
+      
+
+
+
+      
+
+        
+    
+    
+
+  </script>
+</body>
+</html>
